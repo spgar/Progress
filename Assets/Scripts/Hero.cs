@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
+// This Hero class sets up a simple GUI and allows the player to click buttons to do things like buy potions
+// and kill dragons. Hero also communicates with the AchievementManager to track progress.
+
 public class Hero : MonoBehaviour
 {
     public AchievementManager AchievementManager;
