@@ -1,4 +1,4 @@
-progress
+Progress
 ========
 
 Progress is an achievement framework for Unity3D released under the MIT license. If you want something similar to Xbox achievements or PlayStation trophies in your game, then Progress is likely a decent place to start.
