@@ -2,6 +2,9 @@ using System.Linq;
 using UnityEngine;
 using System.Collections;
 
+// AchievementManager contains Achievements, which players are able to earn through performing various actions
+// in the game. Each Achievement specifies 
+
 [System.Serializable]
 public class Achievement
 {
@@ -17,6 +20,7 @@ public class Achievement
     public bool Earned = false;
     private float currentProgress = 0.0f;
 
+	// Returns true if this progress added results in the Achievement being earned.
     public bool AddProgress(float progress)
     {
         if (Earned)
@@ -34,6 +38,7 @@ public class Achievement
         return false;
     }
 
+	// Returns true if this progress set results in the Achievement being earned.
     public bool SetProgress(float progress)
     {
         if (Earned)
@@ -51,6 +56,7 @@ public class Achievement
         return false;
     }
 
+	// Basic GUI for displaying an achievement. Has a different style when earned and not earned.
     public void OnGUI(Rect position, GUIStyle GUIStyleAchievementEarned, GUIStyle GUIStyleAchievementNotEarned)
     {
         GUIStyle style = GUIStyleAchievementNotEarned;
@@ -107,7 +113,7 @@ public class AchievementManager : MonoBehaviour
         UpdateRewardPointTotals();
 	}
 	
-    // Make sure the setup assumptions we have are met.
+    // Make sure some assumptions about achievement data setup are followed.
     private void ValidateAchievements()
     {
         ArrayList usedNames = new ArrayList();
@@ -183,14 +189,14 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
+	// Sets up a scrollview and fills it out with each Achievement.
+	// Also displays the total number of reward points earned.
     void OnGUI()
     {
         float yValue = 5.0f;
         float achievementGUIWidth = 500.0f;
 
         GUI.Label(new Rect(200.0f, 5.0f, 200.0f, 25.0f), "-- Achievements --");
-
-        // Setup a scrollview, and then fill it with each achievement in our list.
 
         achievementScrollviewLocation = GUI.BeginScrollView(new Rect(0.0f, 25.0f, achievementGUIWidth + 25.0f, 400.0f), achievementScrollviewLocation,
                                                             new Rect(0.0f, 0.0f, achievementGUIWidth, Achievements.Count() * 80.0f));

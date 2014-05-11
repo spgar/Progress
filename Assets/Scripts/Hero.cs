@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-// This Hero class sets up a simple GUI and allows the player to click buttons to do things like buy potions
-// and kill dragons. Hero also communicates with the AchievementManager to track progress.
+// The Hero class has three responsibilities:
+// - OnGUI provides the actions the player is able to perform.
+// - Tracks the player's inventory/status.
+// - Communicates with the AchievementManager to track progress.
 
 public class Hero : MonoBehaviour
 {
@@ -30,6 +32,7 @@ public class Hero : MonoBehaviour
     {
         if (inStealthMode)
         {
+			// If the player is in stealth mode then tick up the time spent towards the Invisible Man achievement.
             AchievementManager.AddProgressToAchievement("The Invisible Man", Time.deltaTime);
         }
 	}
@@ -39,6 +42,7 @@ public class Hero : MonoBehaviour
         AchievementManager.SetProgressToAchievement("Potion Hoarder", numRedPotions + numBluePotions + numGreenPotions);
         if (numRedPotions > 0 && numBluePotions > 0 && numGreenPotions > 0)
         {
+			// The player has collected one of each potion type.
             AchievementManager.SetProgressToAchievement("Potion Collector", 1.0f);
         }
     }
@@ -57,6 +61,8 @@ public class Hero : MonoBehaviour
         PotionQuantitiesChanged();
     }
 
+	// This GUI handles everything that the player is able to do in this 'game'. It's basically just a bunch
+	// of buttons and toggles that abstract away game actions like buying items and defeating monsters.
     void OnGUI()
     {
         float xPosition = 600.0f;
