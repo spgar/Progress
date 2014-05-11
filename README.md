@@ -10,3 +10,11 @@ http://www.stevegargolinski.com/projectfiles/Progress/WebPlayer.html
 For more information:
 
 http://www.stevegargolinski.com/progress-a-free-achievement-framework-for-unity/
+
+Contact:
+
+Steve Gargolinski
+steve.gargolinski@gmail.com
+@sgargolinski
+http://www.stevegargolinski.com
+https://github.com/spgar
