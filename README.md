@@ -9,7 +9,7 @@ For more information you can [check out my blog post here](http://www.stevegargo
 
 Contact:
 
-Steve Gargolinski
-steve.gargolinski@gmail.com
-@sgargolinski
+Steve Gargolinski  
+steve.gargolinski@gmail.com  
+@sgargolinski  
 http://www.stevegargolinski.com
