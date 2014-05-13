@@ -5,6 +5,8 @@ Progress is an achievement framework for Unity3D released under the MIT license.
 
 This is a small project that I threw together quickly because I didn't have time to do the full [7 Day Roguelike Challenge](http://www.roguebasin.com/index.php?title=7DRL), so the code quality isn't the best and sadly there's no test coverage - maybe in the future I'll find the time to improve the project. I do know of at least one [shipping product](http://games.sonicviz.com/chordskilz/) that used this framework, so there's some interest.
 
+Last tested with Unity 4.3.2f1.
+
 ## Example:
 
 View a simple example [in the Unity Webplayer here](http://www.stevegargolinski.com/projectfiles/Progress/WebPlayer.html).
