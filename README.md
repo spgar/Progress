@@ -14,10 +14,3 @@ View a simple example [in the Unity Webplayer here](http://www.stevegargolinski.
 ## How to Use:
 
 For more information you can [check out my blog post here](http://www.stevegargolinski.com/progress-a-free-achievement-framework-for-unity/), which includes a rundown of how to setup some basic achievements.
-
-## Contact:
-
-Steve Gargolinski  
-steve.gargolinski@gmail.com  
-[@sgargolinski](http://twitter.com/sgargolinski)  
-[http://www.stevegargolinski.com](http://www.stevegargolinski.com)
